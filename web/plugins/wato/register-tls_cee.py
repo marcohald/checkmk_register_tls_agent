@@ -42,7 +42,7 @@ def _valuespec_agent_config_register_tls():
                     "The User should have the Privilige to Pair an Agent, Read all hosts, write all hosts "),
                 allow_empty=False
             )),
-            ("tls_password", TextAscii(
+            ("tls_password", Password(
                 title=_("Password / Secret for Registration User"),
                 allow_empty=False
             )),
